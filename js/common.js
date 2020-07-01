@@ -1,22 +1,29 @@
 $(document).ready(function() {
 
+	//прилипающие меню
+var $menu = $(".header");
+$(window).scroll(function(){
+	if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
+		$menu.removeClass("default").addClass("fixed");
+	} else if($(this).scrollTop() <= 0 && $menu.hasClass("fixed")) {
+		$menu.removeClass("fixed").addClass("default");
+	}
+	
+});
+
+if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
+		$menu.removeClass("default").addClass("fixed");
+	} else if($(this).scrollTop() <= 0 && $menu.hasClass("fixed")) {
+		$menu.removeClass("fixed").addClass("default");
+	}
+
  wow = new WOW({mobile:false})
         wow.init();
  AOS.init({
         easing: 'ease-in-out-sine'
       });
-//прилипающие меню
-var $menu = $("#menu");
-$(window).scroll(function(){
-	if ( $(this).scrollTop() > 600 && $menu.hasClass("default") ){
-		$menu.removeClass("default").addClass("fixed");
-	} else if($(this).scrollTop() <= 600 && $menu.hasClass("fixed")) {
-		$menu.removeClass("fixed").addClass("default");
-	}
-});
 
-	//плавный скролл
-	$(".navigat li a").mPageScroll2id();
+
 
 
 	//кнопка sandwich
