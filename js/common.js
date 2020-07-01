@@ -17,8 +17,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$menu.removeClass("fixed").addClass("default");
 	}
 
- wow = new WOW({mobile:false})
-        wow.init();
+
  AOS.init({
         easing: 'ease-in-out-sine'
       });
@@ -45,7 +44,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 	/*высота блока по экрану*/
 function heightDetect() {
-    $('.menu-mobile').css("height", $(window).height() -$(".header__center").height() + 40);
+    $('.menu-mobile').css("height", $(window).height() -$(".header").height() + 40);
   };
     heightDetect();
     $(window).resize(function() {
