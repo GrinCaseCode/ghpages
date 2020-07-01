@@ -280,6 +280,9 @@ p {
 	align-items: center;
 	justify-content: center;
 	position: absolute;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .sidebar-main {
 	background-color: #5d6c67;
@@ -837,4 +840,7 @@ p {
 .fixed .btn-basket,
 .fixed .btn-catalog {
 	height: 50px;
+}
+.fixed .btn-basket__value {
+	top: 7px;
 }
