@@ -56,6 +56,9 @@
 .wrapper {
     padding-top: 195px;
 }
+.questions .block-form {
+  margin-top: 30px;
+}
 }
 
 /* Small Devices, Tablets */
@@ -72,20 +75,16 @@
    .col_pr {
        padding-right: 15px;
    }
-   .btn-phone__text {
+  
+   .btn-phone {
        display: none;
    }
-   .btn-phone {
-       width: 30px;
-       height: 30px;
-       padding: 0;
-       vertical-align: middle;
-       display: inline-block;
-   }
+   .btn-callback,
    .btn-phone__icon {
     width: 30px;
     height: 30px;
     font-size: 10px;
+    margin-right: 0;
 }
 .fixed .btn-catalog,
 .btn-catalog {
@@ -300,11 +299,56 @@
 .fixed .btn-basket__value {
     top: 8px;
 }
+.question__name {
+    padding: 15px 15px;
+    padding-right: 40px;
+  }
+  .question__answer {
+    padding: 25px 15px;
+  }
+  .menu-mobile .btn-phone {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  .title-middle {
+    font-size: 21px;
+    padding: 15px 0;
+  }
 }
-
+@media only screen and (max-width : 550px) {
+.form-modal__image {
+  left: 0;
+  width: 100%;
+ display: none;
+}
+.form-modal .block-form {
+  width: 100%;
+}
+.form-modal {
+  display: block;
+}
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+.question__name {
+  font-size: 14px;
+}
+.question__name i {
+  font-size: 11px;
+  right: 15px;
+}
+.item-news__image {
+  height: 210px;
+}
+.item-news__name, .item-news__date {
+    padding: 0 15px;
+    padding-right: 15px;
+    }
+    .item-news__name {
+    font-size: 15px;
+    padding-top: 15px;
+  }
 }
 
 /* Custom, iPhone Retina */

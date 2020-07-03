@@ -50,6 +50,24 @@ function heightDetect() {
     $(window).resize(function() {
       heightDetect();
     });
+
+
+    $(".question__name").click(function(e) {
+		e.preventDefault();
+		$(".question").removeClass("active");
+
+		$(".question__answer").slideUp(200);
+		if ($(this).siblings(".question__answer").is(":hidden")) {
+			$(this).parent().addClass("active");
+			$(this).siblings(".question__answer").slideDown(200);
+		
+		} else {
+			$(this).parent().removeClass("active");
+		$(this).siblings(".question__answer").slideUp(200);
+		
+		}
+
+		});
 	//слайдер
 
 	$('.slider').slick({
@@ -66,7 +84,13 @@ function heightDetect() {
 	//Документация: http://fancybox.net/howto
 	//<a class="fancybox"><img src="image.jpg" /></a>
 	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
-	$(".fancybox").fancybox();
+	$(".fancybox").fancybox({
+    helpers:  {
+      overlay : {
+        locked : false
+      }
+    }
+  });
 
 
 	//Кнопка "Наверх"
