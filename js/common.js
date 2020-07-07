@@ -96,13 +96,58 @@ function heightDetect2() {
 		});
 	//слайдер
 
-	$('.slider').slick({
+	$('.slider-card').slick({
+		arrows: false,
+		dots: true,
 		infinite: true,
-		slidesToShow: 5,
+		slidesToShow: 1,
 		slidesToScroll: 1
 	});
 
 	$(".input-phone").mask("+7(999) 999-99-99");
+
+	$('.tabs li a').click(function(event) {
+		event.preventDefault();
+	});
+	$('.tabs li').click(function(event) {
+		$(this).parent().find("li").removeClass('active');
+		$(this).addClass('active');
+		$(this).parent().parent().parent().find(".tab-content").hide();
+		var selectTab = $(this).find('a').attr("href");
+		$(selectTab).fadeIn();
+	});
+
+    jQuery('.quantity').each(function() {
+      var spinner = jQuery(this),
+        input = spinner.find('input[type="number"]'),
+        btnUp = spinner.find('.quantity-up'),
+        btnDown = spinner.find('.quantity-down'),
+        min = input.attr('min'),
+        max = input.attr('max');
+
+      btnUp.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue >= max) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue + 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+      });
+
+      btnDown.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue <= min) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue - 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+      });
+
+    });
 
 
 
@@ -135,6 +180,11 @@ objectFitImages()
 
 });
 
+
+$(window).on('load', function(){
+
+	$('.scroll-block').jScrollPane();
+});
 
 /*polifyl*/
 /*! npm.im/object-fit-images 3.2.4 */
