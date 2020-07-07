@@ -413,6 +413,9 @@
 .righ-card p:last-child {
   margin-bottom: 0;
 }
+.footer .logo {
+  margin-bottom: 15px;
+}
 }
 @media only screen and (max-width : 550px) {
 .form-modal__image {
