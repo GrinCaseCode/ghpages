@@ -29,17 +29,34 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$(".btn_nav").click(function() {
 		$(".sandwich").toggleClass("active");
 		if ($(".menu-mobile").is(":hidden")) {
-			$(".menu-mobile").slideDown(600);
+			$(".menu-mobile").slideDown(200);
 		} else {
-			$(".menu-mobile").slideUp(600);
+			$(".menu-mobile").slideUp(200);
 		}
 		
 	});
 
 	$(".menu-mobile a").click(function() {
-			$(".menu-mobile").slideUp(600);
+			$(".menu-mobile").slideUp(200);
 			$(".sandwich").removeClass("active");
 		});
+
+	$(".btn-catalog").click(function(e) {
+		e.preventDefault();
+			if ($(".menu-catalog").is(":hidden")) {
+			$(".menu-catalog").slideDown(200);
+		} else {
+			$(".menu-catalog").slideUp(200);
+		}
+		});
+
+	$(document).mouseup(function (e){ 
+		var div = $(".menu-catalog"); 
+		if (!div.is(e.target) 
+		    && div.has(e.target).length === 0) { 
+			div.slideUp(200); 
+		}
+	});
 
 
 	/*высота блока по экрану*/
@@ -49,6 +66,15 @@ function heightDetect() {
     heightDetect();
     $(window).resize(function() {
       heightDetect();
+    });
+
+    /*высота блока по экрану*/
+function heightDetect2() {
+    $('.menu-catalog').css("height", $(window).height() -$(".header").height() + 40);
+  };
+    heightDetect2();
+    $(window).resize(function() {
+      heightDetect2();
     });
 
 
