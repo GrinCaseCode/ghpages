@@ -145,72 +145,77 @@
 			</div>
 		</header>
 
-		<div class="corporate">
+		<div class="contacts">
 			<div class="container">
-				<h1 class="title-section">Корпоративным клиентам</h1>
+				<h1 class="title-section">Контакты</h1>
 				<div class="row">
 					<div class="col-lg-8">
-						<div class="descr-title-big">Наша компания реализует запчасти для сельскохозяйственной техники в Крыму по доступной цене</div>
-						<div class="text-simple">
-							<article>
-								<p>Агромаркет предлагает Вам широкий ассортимент продукции, что позволяет в кратчайшие сроки найти нужную деталь для любого вида сельскохозяйственной техники, будь то тракторы, комбайны или другие сельскохозяйственные машины.</p>
-							</article>
+						<div class="block-contacts">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="item-contact">
+										<div class="block-contacts__title">Адрес:</div>
+										<p>пгт. Красногвардейское, </p>
+										<p>ул. Спортивная, 81</p>
+										<p>Пн-пт 8:00-17:00, Сб 8:00-12:00</p>
+									</div>
+									<div class="item-contact">
+										<div class="block-contacts__title">Телефон:</div>
+										<p><a href="tel:8 (978) 839 35 85" rel="nofollow">8 (978) 839 35 85</a></p>
+									</div>
+									<div class="item-contact">
+										<div class="block-contacts__title">E-mail:</div>
+										<p><a href="mailto:agromarket_1@mail.ru " rel="nofollow">agromarket_1@mail.ru </a></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="item-contact">
+										<div class="block-contacts__title">Реквизиты:</div>
+										<p>ООО "АГРОМАРКЕТ"</p>
+										<p>Юридический адрес: 297000, </p>
+										<p>Крым Респ, Красногвардейский р-н, </p>
+										<p>Красногвардейское пгт, ул. Спортивная, 81</p>
+										<p>ИНН/КПП: 9105002957/ 910501001</p>
+										<p>ОГРН: 1149102084746</p>
+										<p>р/с 40702810440570000182</p>
+										<p>К/с № 30101810335100000607</p>
+										<p>РНКБ БАНК (ПАО) г. Симферополь</p>
+										<p>БИК № 043510607 </p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="descr-title-big">Сотрудничаем с:</div>
-				<div class="row row_corporate">
 					<div class="col-lg-4">
-						<div class="item-corporate">Крупными агрохолдингами</div>
+						<div class="block-form">
+							<div class="block-form__title block-form__title_center">Обратная связь</div>
+							<form>
+								<div class="form-item">
+									<input type="text" placeholder="Ваше имя" required="required">
+								</div>
+								<div class="form-item">
+									<input type="text" placeholder="E-mail" required="required">
+								</div>
+								<div class="form-item">
+									<textarea placeholder="Вопрос" required="required"></textarea>
+								</div>
+								<div class="form-item align_center">
+									<button class="btn-main btn-main_big" type="submit">Отправить</button>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" required="required" checked="checked" />
+										<span>Согласие на обработку персональных данных</span>
+									</label>
+								</div>
+							</form>
+						</div>
 					</div>
-					<div class="col-lg-4">
-						<div class="item-corporate">Крупными хозяйствами и обычными фермерами</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="item-corporate">Торгующими компаниями и поставщиками запчастей</div>
-					</div>
-				</div>
-				<div class="corporate__image">
-					<img src="img/steps.svg" alt="alt">
 				</div>
 			</div>
 		</div>
 
-		<div class="consultation consultation_inner section_gray">
-			<div class="container">
-				<h2 class="title-section title-section_center">Остались вопросы?</h2>
-				<div class="block-form">
-					<div class="block-form__title">Заполните форму</div>
-					<div class="block-form__descr">и наш специалист свяжется с вами в течение 10 минут</div>
-					<form>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-item">
-									<input type="text" placeholder="Ваше имя" required="required">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-item">
-									<input type="text" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
-								</div>
-							</div>
-						</div>
-						<div class="form-item align_center">
-							<button class="btn-main" type="submit">Получить условия</button>
-						</div>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox" required="required" checked="checked" />
-								<span>Согласие на обработку персональных данных</span>
-							</label>
-						</div>
-					</form>
-					<div class="consultation_inner__image">
-						<img src="img/consultation.svg" alt="alt">
-					</div>
-				</div>
-			</div>
-		</div>
+		<div id="map"></div>
 
 		<footer class="footer">
 			<div class="container">
@@ -294,9 +299,9 @@
 						<div class="form-item align_center">
 							<button class="btn-main btn-main_big" type="submit">Отправить</button>
 						</div>
-						<div class="checkbox">
+						<div class="checkbox checkbox_main">
 							<label>
-								<input type="checkbox" required="required" checked="checked" />
+								<input type="checkbox" required="required"/>
 								<span>Согласие на обработку персональных данных</span>
 							</label>
 						</div>
@@ -321,6 +326,46 @@
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="js/common.js?ver=1.55"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script>
+	$(document).ready(function() {
+		ymaps.ready(init);
+
+		function init() {
+			var myMap = new ymaps.Map('map', {
+				center: [45.505944, 34.311727],
+				zoom: 15
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+
+
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				balloonContent: '<p>пгт. Красногвардейское, ул. Спортивная, 81</p>'
+			}, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/pin.svg',
+            iconImageSize: [29, 38],
+        });
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark);
+
+			myPlacemark.events
+			.add('mouseenter', function (e) {
+            // Ссылку на объект, вызвавший событие,
+            // можно получить из поля 'target'.
+            e.get('target').options.set('iconImageHref', 'img/pin2.svg'); 
+        })
+			.add('mouseleave', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin.svg'); 
+			});
+		}
+	});
+</script> 
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
