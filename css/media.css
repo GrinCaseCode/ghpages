@@ -25,6 +25,9 @@
     .righ-card {
     padding: 34px 30px;
   }
+  .block-contacts p {
+    line-height: 28px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -110,6 +113,10 @@
   min-height: auto;
 }
 .row_card {
+  margin-bottom: 30px;
+}
+.block-contacts {
+  min-height: auto;
   margin-bottom: 30px;
 }
 }
@@ -416,6 +423,13 @@
 .footer .logo {
   margin-bottom: 15px;
 }
+.item-contact:last-child,
+.item-contact {
+  margin-bottom: 30px;
+}
+.block-contacts {
+  padding-bottom: 0;
+}
 }
 @media only screen and (max-width : 550px) {
 .form-modal__image {
@@ -496,6 +510,13 @@
 .item-feature {
     font-size: 13px;
     margin-bottom: 15px;
+    }
+    .block-contacts {
+      padding: 25px 15px;
+      padding-bottom: 0;
+    }
+    #map {
+      height: 370px;
     }
 }
 
