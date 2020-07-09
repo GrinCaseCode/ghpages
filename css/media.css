@@ -119,6 +119,52 @@
   min-height: auto;
   margin-bottom: 30px;
 }
+.fliter-block {
+  display: none;
+}
+.btn-main_filter {
+  width: 260px;
+  height: 48px;
+  font-size: 14px;
+  max-width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin: 0 auto;
+}
+.btn-main_filter i {
+  height: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 35px;
+}
+.fliter-block {
+  padding-top: 30px;
+}
+.item-product__image {
+  position: relative;
+  top: -1px;
+}
+.row_products {
+  display: none !important;
+}
+.slider-products {
+  padding-bottom: 60px;
+  margin-right: -15px;
+  margin-left: 0px;
+}
+.slider-products .slick-dots {
+  bottom: 30px;
+}
+.slider-products .item-product {
+  margin-right: 15px;
+  box-shadow: none !important;
+  transform: scale(1) !important;
+}
 }
 
 /* Small Devices, Tablets */
@@ -157,14 +203,18 @@
     font-size: 17px;
     margin-right: 10px;
 }
-.fixed .btn-basket, .btn-basket {
+.fixed .btn-basket,
+ .btn-basket {
     height: 44px;
     padding-left: 0px;
     text-align: right;
     padding-right: 50px;
     justify-content: flex-end;
-    background-position: right 20px center;
-    background-size: 15px;
+
+}
+.btn-basket::after {
+      background-position: right 20px center;
+    background-size: 20px;
 }
 .btn-basket__value {
     font-size: 12px;
@@ -430,6 +480,91 @@
 .block-contacts {
   padding-bottom: 0;
 }
+.card .row_products > div {
+  margin-bottom: 30px;
+}
+.header__bottom  {
+  padding: 0;
+  background-color: #e1e0e6;
+}
+.btn-basket:before,
+.btn-catalog:before {
+  display: none;
+}
+.consultation__image {
+  height: 200px;
+}
+.consultation__image img {
+  max-height: 100%;
+}
+.hidden-mobile-text {
+  display: none;
+}
+.link-show-text {
+  display: inline-block;
+  color: #666;
+  margin-top: 15px;
+  border-bottom: 1px #666 solid;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.link-show-text:hover {
+  border-color: transparent;
+}
+.catalog {
+    padding-bottom: 40px;
+}
+.item-billbord__icon {
+    height: 65px;
+  }
+  .item-billbord {
+    padding-bottom: 10px;
+  }
+  .row_items-billbord > div {
+    margin-bottom: 12px;
+}
+.payment__image img,
+.corporate__image img,
+.about__image img {
+  max-height: 200px;
+  width: auto;
+}
+.row_catalog {
+  margin: 0 -5px;
+}
+.row_catalog > div {
+  padding: 0 5px;
+}
+.row_catalog .item-product__bottom {
+  position: relative;
+  display: block;
+  padding: 0;
+  padding-top: 10px;
+}
+.row_catalog .item-product {
+  padding-bottom: 0;
+}
+.row_catalog  .item-product__image {
+  height: 150px;
+}
+.row_catalog  .item-product__content {
+    padding: 10px 10px;
+    }
+    .row_catalog  .item-product__name {
+    font-size: 15px;
+  }
+  .row_catalog  .item-product__articul {
+    padding-top: 6px;
+    font-size: 12px;
+}
+.row_catalog  .item-product__price {
+    font-size: 16px;
+    padding-bottom: 10px;
+    }
+    .row_catalog > div {
+      margin-bottom: 10px;
+    }
 }
 @media only screen and (max-width : 550px) {
 .form-modal__image {
@@ -518,6 +653,10 @@
     #map {
       height: 370px;
     }
+    .form-modal .block-form {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -543,17 +682,161 @@
   .menu-catalog {
     height: auto !important;
   }
+  .link-show-text,
     .menu-mobile {
        display: none !important;
+   }
+    .header__top {
+    max-height: 300px;
+    overflow: hidden;
+   }
+   .fixed .header__top {
+    max-height: 0;
+    padding: 0;
+   }
+   .header__top {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+.btn-main_filter {
+  display: none;
 }
-
+.fliter-block {
+  display: block !important;
+}
+.slider-products {
+  display: none !important;
+}
+}
+@media only screen and (min-width : 992px) {
+  .btn-catalog {
+    top: 0;
+    left: 0;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    width: 100%;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .header__top,
+  .btn-basket::after,
+  .btn-basket__text span,
+  .btn-basket__text,
+  .btn-phone,
+   .btn-catalog i  {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+   }
+   .fixed .btn-basket__text {
+    font-size: 13px;
+   }
+   .fixed .btn-basket__text span {
+    font-size: 15px;
+}
+   .fixed .btn-phone {
+    font-size: 15px;
+   }
+  
+.fixed .header__contacts {
+  opacity: 0;
+}
+.fixed .btn-catalog {
+    top: -51px;
+    left: 203px;
+    padding-right: 20px;
+        padding-left: 10px;
+  width: auto;
+}
+.fixed .btn-basket {
+    top: -51px;
+    left: -186px;
+    padding-left: 46px;
+    width: 162px;
+}
+.fixed .header__bottom {
+  height: 0;
+}
+.fixed .btn-basket__value {
+    top: 2px;
+    left: 23px;
+    width: 17px;
+    height: 17px;
+    font-size: 12px;
+}
+.fixed .btn-basket::after {
+    background-position: 7px center;
+}
+.btn-basket {
+  top: 0;
+  left: 0;
+}
+.fixed .logo img {
+    width: 190px;
+}
+.fixed .logo__descr {
+    bottom: 5px;
+    left: 57px;
+    font-size: 8px;
+    width: 140px;
+}
+.fixed .btn-basket, 
+.fixed .btn-catalog {
+  height: 40px;
+  font-size: 16px;
+}
+.fixed  .btn-catalog i {
+    margin-right: 13px;
+    }
+.fixed .form-search {
+    width: 178px;
+    top: -51px;
+    left: -16px;
+}
+  .form-search {
+    top: 0;
+    left: 0;
+  }
+  .form-search input {
+    border: 1px transparent solid;
+  }
+   .fixed .form-search input  {
+    border-color: #ccc;
+   }
+   .fixed .header__bottom .container {
+    height: 0;
+   }
+   .wrapper.wrapper_fixed {
+  padding-top: 75px;
+}
+}
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+.fixed .form-search {
+  width: 235px;
+}
+.fixed .btn-catalog {
+    top: -55px;
+    left: 227px;
+    padding-right: 60px;
+    padding-left: 15px;
+    }
+    .fixed .form-search {
+      top: -55px;
+    }
+    .fixed .btn-basket {
+    top: -55px;
+    left: -200px;
+    padding-left: 57px;
+    width: 197px;
+}
 }
