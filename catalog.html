@@ -17,11 +17,12 @@
 	<link rel="stylesheet" href="libs/aos-animate/aos.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="libs/jscrollpane/jquery.jscrollpane.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.55" />
-	<link rel="stylesheet" href="css/media.css?ver=1.55" />
+	<link rel="stylesheet" href="css/main.css?ver=1.65" />
+	<link rel="stylesheet" href="css/media.css?ver=1.65" />
 </head>
 <body>
 
@@ -155,159 +156,165 @@
 				<h1 class="title-section">Запасные части к комбайнам</h1>
 				<div class="row">
 					<div class="col-lg-3">
-						<form>
-							<div class="title-sidebar">Назначение</div>
-							<div class="sidebar-block">
-								<div class="scroll-block">
-									<ul class="sidebar-list">
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required" checked="checked" />
-													<span>Для шнека</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required"/>
-													<span>Для молотильного барабана</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required"/>
-													<span>Для зернового шнека</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required"/>
-													<span>Для двигателя</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required"/>
-													<span>Для ведущего моста</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required"/>
-													<span>Для шнека</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required"/>
-													<span>Для молотильного барабана</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required"/>
-													<span>Для зернового шнека</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required"/>
-													<span>Для двигателя</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required"/>
-													<span>Для ведущего моста</span>
-												</label>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="title-sidebar">Производитель</div>
-							<div class="sidebar-block">
-								<div class="scroll-block">
-									<ul class="sidebar-list">
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required" checked="checked" />
-													<span>Строймаш</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required"/>
-													<span>БРТ</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required"/>
-													<span>Каштан</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required"/>
-													<span>Гомсельмаш</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="checkbox checkbox_main">
-												<label>
-													<input type="checkbox" required="required"/>
-													<span>Строймаш</span>
-												</label>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="title-sidebar">Цена</div>
-							<div class="sidebar-block">
-								<div class="price-sidebar">
-									<div class="price-sidebar__left">
-										<p>От</p>
-										<input type="text" value="107">
-									</div>
-									<div class="price-sidebar__right">
-										<p>До</p>
-										<input type="text" value="50 730">
+						<a href="#" class="btn-main btn-main_filter"><span>Открыть фильтр</span> <i class="fas fa-filter"></i></a>
+						<div class="fliter-block">
+							<form>
+								<div class="title-sidebar">Назначение</div>
+								<div class="sidebar-block">
+									<div class="scroll-block">
+										<ul class="sidebar-list">
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required" checked="checked" />
+														<span>Для шнека</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required"/>
+														<span>Для молотильного барабана</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required"/>
+														<span>Для зернового шнека</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required"/>
+														<span>Для двигателя</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required"/>
+														<span>Для ведущего моста</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required"/>
+														<span>Для шнека</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required"/>
+														<span>Для молотильного барабана</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required"/>
+														<span>Для зернового шнека</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required"/>
+														<span>Для двигателя</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required"/>
+														<span>Для ведущего моста</span>
+													</label>
+												</div>
+											</li>
+										</ul>
 									</div>
 								</div>
-							</div>
-							<div class="align_center">
-								<button class="btn-main btn-main_simple" type="sybmit">Применить</button>
-								<div class="btn-clear"></div>
-							</div>
-						</form>
+								<div class="title-sidebar">Производитель</div>
+								<div class="sidebar-block">
+									<div class="scroll-block">
+										<ul class="sidebar-list">
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required" checked="checked" />
+														<span>Строймаш</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required"/>
+														<span>БРТ</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required"/>
+														<span>Каштан</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required"/>
+														<span>Гомсельмаш</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox checkbox_main">
+													<label>
+														<input type="checkbox" required="required"/>
+														<span>Строймаш</span>
+													</label>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="title-sidebar">Цена</div>
+								<div class="sidebar-block">
+									<div class="range-catalog">
+										<input type="text" class="range-catalog__input" name="my_range" value="" />
+										<div class="price-sidebar">
+											<div class="price-sidebar__left">
+												<p>от</p>
+												<input type="text" maxlength="4" value="0" class="control-input control-input__from" />
+											</div>
+											<div class="price-sidebar__right">
+												<p>до</p>
+												<input type="text" maxlength="4" value="50 730" class="control-input control-input__to" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="align_center">
+									<button class="btn-main btn-main_simple" type="sybmit">Применить</button>
+									<div class="btn-clear"></div>
+								</div>
+							</form>
+						</div>
 					</div>
 					<div class="col-lg-9">
 						<div class="row row_filter">
@@ -349,7 +356,7 @@
 							</div>
 						</div>
 						<div class="row row_catalog">
-							<div class="col-xl-4 col-md-6">
+							<div class="col-xl-4 col-md-6 col-6">
 								<div class="item-product">
 									<div class="item-product__image">
 										<div class="item-product__tag item-product__tag_action">Акция</div>
@@ -365,7 +372,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-4 col-md-6">
+							<div class="col-xl-4 col-md-6 col-6">
 								<div class="item-product">
 									<div class="item-product__image">
 										<div class="item-product__tag item-product__tag_hit">Хит</div>
@@ -381,7 +388,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-4 col-md-6">
+							<div class="col-xl-4 col-md-6 col-6">
 								<div class="item-product">
 									<div class="item-product__image">
 										<div class="item-product__tag item-product__tag_action">Акция</div>
@@ -397,7 +404,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-4 col-md-6">
+							<div class="col-xl-4 col-md-6 col-6">
 								<div class="item-product">
 									<div class="item-product__image">
 										<div class="item-product__tag item-product__tag_action">Акция</div>
@@ -413,7 +420,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-4 col-md-6">
+							<div class="col-xl-4 col-md-6 col-6">
 								<div class="item-product">
 									<div class="item-product__image">
 										<div class="item-product__tag item-product__tag_hit">Хит</div>
@@ -429,7 +436,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-4 col-md-6">
+							<div class="col-xl-4 col-md-6 col-6">
 								<div class="item-product">
 									<div class="item-product__image">
 										<div class="item-product__tag item-product__tag_action">Акция</div>
@@ -445,7 +452,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-4 col-md-6">
+							<div class="col-xl-4 col-md-6 col-6">
 								<div class="item-product">
 									<div class="item-product__image">
 										<div class="item-product__tag item-product__tag_action">Акция</div>
@@ -461,7 +468,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-4 col-md-6">
+							<div class="col-xl-4 col-md-6 col-6">
 								<div class="item-product">
 									<div class="item-product__image">
 										<div class="item-product__tag item-product__tag_hit">Хит</div>
@@ -477,7 +484,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-4 col-md-6">
+							<div class="col-xl-4 col-md-6 col-6 hidden-mobile">
 								<div class="item-product">
 									<div class="item-product__image">
 										<div class="item-product__tag item-product__tag_action">Акция</div>
@@ -539,15 +546,19 @@
 					<div class="row">
 						<div class="col-lg-6">
 							<article>
-								<p>Стремящиеся вытеснить традиционное производство, нанотехнологии заблокированы в рамках своих собственных рациональных ограничений. Задача организации, в особенности же курс на социально-ориентированный национальный проект не оставляет шанса для дальнейших направлений развития. С учётом сложившейся международной обстановки, реализация намеченных плановых заданий играет определяющее значение для укрепления моральных ценностей. А также представители современных социальных резервов, превозмогая сложившуюся непростую экономическую ситуацию, указаны как претенденты на роль</p>
+								<p>Стремящиеся вытеснить традиционное производство, нанотехнологии заблокированы в рамках своих собственных рациональных ограничений. <span class="hidden-mobile-text"> Задача организации, в особенности же курс на социально-ориентированный национальный проект не оставляет шанса для дальнейших направлений развития.  С учётом сложившейся международной обстановки, реализация намеченных плановых заданий играет определяющее значение для укрепления моральных ценностей. А также представители современных социальных резервов, превозмогая сложившуюся непростую экономическую ситуацию, указаны как претенденты на роль
+								</span></p>
 							</article>
 						</div>
 						<div class="col-lg-6">
-							<article>
-								<p>А также представители современных социальных резервов, превозмогая сложившуюся непростую экономическую ситуацию, указаны как претенденты на роль ключевых факторов. Следует отметить, что курс на социально-ориентированный национальный проект представляет собой интересный эксперимент проверки как самодостаточных, так и внешне зависимых концептуальных решений. С другой стороны, убеждённость некоторых оппонентов говорит о возможностях стандартных подходов. Сложно сказать, почему тщательные исследования конкурентов представляют собой не что иное, как квинтэссенцию победы маркетинга</p>
-							</article>
+							<div class="hidden-mobile-text">
+								<article>
+									<p>А также представители современных социальных резервов, превозмогая сложившуюся непростую экономическую ситуацию, указаны как претенденты на роль ключевых факторов. Следует отметить, что курс на социально-ориентированный национальный проект представляет собой интересный эксперимент проверки как самодостаточных, так и внешне зависимых концептуальных решений. С другой стороны, убеждённость некоторых оппонентов говорит о возможностях стандартных подходов. Сложно сказать, почему тщательные исследования конкурентов представляют собой не что иное, как квинтэссенцию победы маркетинга</p>
+								</article>
+							</div>
 						</div>
 					</div>
+					<a href="#" class="link-show-text">Читать далее</a>
 				</div>
 			</div>
 		</div>
@@ -667,7 +678,7 @@
 					<img src="img/form_img1.jpg" alt="alt">
 				</div>
 				<div class="block-form">
-					<div class="block-form__title block-form__title_center">Задать вопрос</div>
+					<div class="block-form__title block-form__title_center">Заказать звонок</div>
 					<form>
 						<div class="form-item">
 							<input type="text" placeholder="Ваше имя" required="required">
@@ -678,9 +689,9 @@
 						<div class="form-item align_center">
 							<button class="btn-main btn-main_big" type="submit">Отправить</button>
 						</div>
-						<div class="checkbox checkbox_main">
+						<div class="checkbox">
 							<label>
-								<input type="checkbox" required="required"/>
+								<input type="checkbox" required="required" checked="checked" />
 								<span>Согласие на обработку персональных данных</span>
 							</label>
 						</div>
@@ -702,9 +713,10 @@
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/aos-animate/aos.js"></script>
 <script src="libs/jscrollpane/jquery.jscrollpane.min.js"></script>
+<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
-<script src="js/common.js?ver=1.55"></script>
+<script src="js/common.js?ver=1.65"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
