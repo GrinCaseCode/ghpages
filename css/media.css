@@ -724,7 +724,7 @@
     transition: all 0.3s;
    }
    .show-mobile {
-    display: block;
+   display: none !important;
    }
 }
 
