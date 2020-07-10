@@ -723,6 +723,9 @@
     -o-transition: all 0.3s;
     transition: all 0.3s;
    }
+   .show-mobile {
+    display: block;
+   }
 }
 
 /* Medium Devices, Desktops */
