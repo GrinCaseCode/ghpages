@@ -156,7 +156,18 @@
 				<h1 class="title-section">Запасные части к комбайнам</h1>
 				<div class="row">
 					<div class="col-lg-3">
-						<a href="#" class="btn-main btn-main_filter"><span>Открыть фильтр</span> <i class="fas fa-filter"></i></a>
+						<div class="head-mobile-filter">
+							<a href="#" class="btn-main btn-main_filter"><span>Открыть фильтр</span> <i class="fas fa-filter"></i></a>
+							<div class="item-filter show-mobile">
+								<div class="item-select">
+									<select>
+										<option value="1">По умолчанию</option>
+										<option value="1">По возрастанию</option>
+										<option value="1">По спаданию</option>
+									</select>
+								</div>
+							</div>
+						</div>
 						<div class="fliter-block">
 							<form>
 								<div class="title-sidebar">Назначение</div>
@@ -318,7 +329,7 @@
 					</div>
 					<div class="col-lg-9">
 						<div class="row row_filter">
-							<div class="col-md-4">
+							<div class="col-md-4 hidden-mobile">
 								<div class="item-filter">
 									<div class="item-filter__title">Сортировка:</div>
 									<div class="item-select">
@@ -344,7 +355,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 hidden-mobile">
 								<div class="item-filter">
 									<div class="item-filter__title">Отображать на странице:</div>
 									<ul class="numbers-filter">
